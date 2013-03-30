@@ -24,5 +24,5 @@ for x in dot/home/*; do
   mv -v ~/.$base{,.$t} || true
   
   echo -n "Linking: "
-  ln -v -s $dir/.$base ~/.$base
+  ln -v -s $dir/$base ~/.$base
 done
