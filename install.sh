@@ -5,11 +5,7 @@ set -eu
 cd ~
 
 if [[ ! -d "dot" ]]; then
-  if [[ "$USER" == "nictuku" ]]; then
-   git clone git@github.com:nictuku/dot.git
-  else 
    git clone https://github.com/nictuku/dot.git
-  fi
 fi
 
 for x in dot/home/*; do
