@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Required Debian/Ubuntu packages;
-# sudo apt-get install realpath git
-
 set -eu
 
 cd ~
