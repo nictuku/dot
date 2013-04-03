@@ -6,7 +6,7 @@ nictuku's dot config files (bash, vim)
 Install dependencies:
 
 ```
-sudo apt-get install realpath git
+sudo apt-get install realpath git screen vim curl
 ```
 
 Install dot files:

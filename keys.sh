@@ -9,6 +9,7 @@ fi
 if [[ ! -d ~/.ssh ]]; then
   mkdir ~/.ssh
   chmod 700 ~/.ssh
+  touch ˜/.ssh/authorized_keys
 fi
 
 # The original keys are always merged with the original keys.
