@@ -16,7 +16,9 @@ fi
 # If I didn't keep them in separate files, removing a key from github would
 # never remove it from the server.
 if [[ ! -s ~/.ssh/orig_keys ]]; then
-	mv ~/.ssh/authorized_keys ~/.ssh/orig_keys
+  if [[ -s ~/.ssh/authorized_keys ]]; then
+    mv ~/.ssh/authorized_keys ~/.ssh/orig_keys
+  fi
 fi
 
 f=$(mktemp)
@@ -28,6 +30,9 @@ cat <<EOF> $f2
 # Any changes done here will be overwritten. Please change the orig_keys
 # file instead.
 EOF
-
-sort -u ~/.ssh/orig_keys $f >> $f2
+if [[ -s ~/.ssh/orig_keys ]] ; then 
+  sort -u ~/.ssh/orig_keys $f >> $f2
+else 
+  sort -u $f >> $f2
+fi
 mv $f2 ~/.ssh/authorized_keys
