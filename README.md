@@ -7,6 +7,7 @@ Install dependencies:
 
 ```
 sudo apt-get install realpath git screen vim curl
+go get github.com/bradfitz/goimports
 ```
 
 Install dot files:
