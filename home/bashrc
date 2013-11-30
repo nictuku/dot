@@ -95,9 +95,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export GOPATH=$HOME
+unset GOROOT
 
-export GOROOT=$HOME/go
-export PATH=$PATH:$HOME/bin:$GOROOT/bin
+export PATH=$PATH:$HOME/bin:$GOPATH/bin
 
 export HISTTIMEFORMAT="%s "
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo $$ $USER \
