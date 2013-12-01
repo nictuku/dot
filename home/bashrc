@@ -97,8 +97,7 @@ fi
 export GOPATH=$HOME
 unset GOROOT
 
-export PATH=$PATH:$HOME/bin:$GOPATH/bin
-
+export PATH=$PATH:$HOME/bin:$GOPATH/bin:/usr/local/go/bin
 export HISTTIMEFORMAT="%s "
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo $$ $USER \
                "$(history 1)" >> ~/.bash_eternal_history'
