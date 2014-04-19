@@ -6,7 +6,7 @@ nictuku's dot config files (bash, vim)
 Install dependencies:
 
 ```
-sudo apt-get install realpath git screen vim curl
+sudo apt-get install realpath git screen vim curl sudo
 go get github.com/bradfitz/goimports
 ```
 
