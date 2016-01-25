@@ -7,7 +7,7 @@ Install dependencies:
 
 ```
 sudo apt-get install realpath git screen vim curl sudo mosh mercurial
-go get github.com/bradfitz/goimports
+go get golang.org/x/tools/cmd/goimports
 ```
 
 Install dot files:
