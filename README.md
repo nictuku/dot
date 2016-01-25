@@ -21,4 +21,10 @@ Install public keys:
 curl -sL https://raw.github.com/nictuku/dot/master/keys.sh | bash
 ```
 
+Config git environment:
+
+```
+curl -sL https://raw.github.com/nictuku/dot/master/git.sh | bash
+```
+
 TODO: Consider using stow. See: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
