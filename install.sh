@@ -19,3 +19,7 @@ for x in dot/home/*; do
   echo -n "Linking: "
   ln -v -s $dir/$base ~/.$base
 done
+
+# Pathogen vim plugin manager
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
