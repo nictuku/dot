@@ -1,9 +1,4 @@
-" Some Linux distributions set filetype in /etc/vimrc.
-" Clear filetype flags before changing runtimepath to force Vim to reload them.
-filetype off
-filetype plugin indent off
-set runtimepath+=/usr/local/go/misc/vim
-filetype plugin indent on
+execute pathogen#infect()
 syntax on
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-let g:gofmt_command = "goimports"
+filetype plugin indent on
+let g:go_fmt_command = "goimports"
