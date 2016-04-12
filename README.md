@@ -7,6 +7,8 @@ Install dependencies:
 
 ```
 sudo apt-get install realpath git screen vim curl sudo mosh mercurial
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME
 go get golang.org/x/tools/cmd/goimports
 ```
 
