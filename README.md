@@ -6,10 +6,11 @@ nictuku's dot config files (bash, vim)
 Install dependencies:
 
 ```
-sudo -i
-apt-get install realpath git screen vim curl sudo mosh mercurial -y
-wget https://storage.googleapis.com/golang/go1.6.3.linux-amd64.tar.gz
-tar zxvf go1.6.3.linux-amd64.tar.gz  -C /usr/local/
+
+sudo apt update
+sudo apt install realpath git screen vim curl sudo mosh mercurial -y
+sudo wget https://storage.googleapis.com/golang/go1.6.3.linux-amd64.tar.gz
+sudo tar zxvf go1.6.3.linux-amd64.tar.gz  -C /usr/local/
 ```
 
 ```
