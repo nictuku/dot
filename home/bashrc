@@ -101,4 +101,5 @@ export PATH=$PATH:$HOME/bin:$GOPATH/bin:/usr/local/go/bin
 export HISTTIMEFORMAT="%s "
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo $$ $USER \
                "$(history 1)" >> ~/.bash_eternal_history'
-
+alias s="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+alias dl="doctl compute droplet list --format=Name,PublicIPv4 --no-header"
