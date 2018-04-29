@@ -16,7 +16,7 @@ sudo tar zxvf go${GO_VERSION}.linux-amd64.tar.gz  -C /usr/local/
 
 ```
 # unprivileged
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/bin
 export GOPATH=$HOME
 go get golang.org/x/tools/cmd/goimports
 ```
