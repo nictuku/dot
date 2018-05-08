@@ -2,8 +2,8 @@
 
 set -eu
 
-if [[ $USER != "nictuku" ]]; then
-	echo "$USER != nictuku"
+if [[ $USER != "yves" ]]; then
+	echo "$USER != yves"
 fi
 
 if [[ ! -d ~/.ssh ]]; then
