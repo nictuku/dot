@@ -6,12 +6,8 @@ nictuku's dot config files (bash, vim)
 Install dependencies:
 
 ```
-GO_VERSION=1.10.1
-sudo apt update
-sudo apt install realpath git screen vim curl sudo mosh mercurial -y
-wget https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz
-if [[ -d /usr/local/go]] ; then sudo mv /usr/local/go{,.before-${GO_VERSION}}; fi
-sudo tar zxvf go${GO_VERSION}.linux-amd64.tar.gz  -C /usr/local/
+# unprivileged
+curl -sL https://raw.github.com/nictuku/dot/master/deps.sh | bash
 ```
 
 ```
