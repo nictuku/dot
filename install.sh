@@ -23,6 +23,20 @@ done
 # Pathogen vim plugin manager
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+function clone() {
+   repo=$1 # https://github.com/fatih/vim-go.git
+   dest=$2 # ~/.vim/pack/plugins/start/vim-go
+   mkdir -p $dest
+   cd $dest
+   git init
+   if ! git config remote.origin.url &> /dev/null;then
+	   git remote add origin $repo
+   fi
+   git fetch origin master
+   git reset origin/master # --hard to wipe everything but is dangerous
+}
+
 # vim-go
-git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
-git clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
+clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
+clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
