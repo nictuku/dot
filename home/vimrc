@@ -2,3 +2,5 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 let g:go_fmt_command = "goimports"
+" https://stackoverflow.com/questions/4760428/how-can-i-make-vims-j-and-gq-commands-use-one-space-after-a-period
+set nojoinspaces
