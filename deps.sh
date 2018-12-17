@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -eux
-GO_VERSION=1.11.1
+GO_VERSION=1.11.4
 sudo apt update
 sudo apt install git screen vim curl sudo mosh mercurial -y
 cd /tmp
