@@ -103,3 +103,5 @@ PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo $$ $USER \
                "$(history 1)" >> ~/.bash_eternal_history'
 alias s="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
 alias dl="doctl compute droplet list --format=Name,PublicIPv4 --no-header"
+
+export GO111MODULE=on
