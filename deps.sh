@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -eux
-GO_VERSION=1.12
+GO_VERSION=1.12.6
 sudo apt update
 sudo apt install git screen vim curl sudo mosh mercurial build-essential -y
 cd /tmp
