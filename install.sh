@@ -8,6 +8,11 @@ if [[ ! -d "dot" ]]; then
    git clone https://github.com/nictuku/dot.git
 fi
 
+# for OSX
+realpath() {
+    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
 for x in dot/home/*; do
   t=$(date +%s)
   x=$(realpath $x)
