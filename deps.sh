@@ -2,7 +2,7 @@
 
 set -eux
 GO_VERSION=1.12.6
-if [ -f "/etc/debian_version" ];
+if [ -f "/etc/debian_version" ]; then
   sudo apt update
   sudo apt install git screen vim curl sudo mosh mercurial build-essential -y
   cd /tmp
