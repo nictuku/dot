@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -eux
-GO_VERSION=1.14.6
+GO_VERSION=1.17.8
 if [ -f "/etc/debian_version" ]; then
   sudo apt update
   sudo apt install git screen wget vim curl sudo mosh mercurial build-essential -y
