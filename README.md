@@ -3,6 +3,9 @@ dot
 
 nictuku's dot config files (bash, vim)
 
+adduser --disabled-password yves
+visudo
+
 sudoers line reminder:
 
 ```
