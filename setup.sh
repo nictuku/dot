@@ -6,7 +6,7 @@ set -eux
 curl -sL https://raw.github.com/nictuku/dot/master/deps.sh | bash
 export PATH=$PATH:/usr/local/go/bin:$HOME/bin
 export GOPATH=$HOME
-go get golang.org/x/tools/cmd/goimports
+go install golang.org/x/tools/cmd/goimports@latest
 
 # dot files
 curl -sL https://raw.github.com/nictuku/dot/master/install.sh | bash
