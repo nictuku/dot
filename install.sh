@@ -42,5 +42,4 @@ function clone() {
 
 # vim-go
 clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
-clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
 clone https://github.com/github/copilot.vim.git ~/.vim/pack/github/start/copilot.vim
