@@ -25,20 +25,5 @@ for x in dot/home/*; do
   ln -v -s $dir/$base ~/.$base
 done
 
-function clone() {
-   repo=$1 # https://github.com/fatih/vim-go.git
-   dest=$2 # ~/.vim/pack/plugins/start/vim-go
-   mkdir -p $dest
-   cd $dest
-   git init
-   if ! git config remote.origin.url &> /dev/null;then
-	   git remote add origin $repo
-   fi
-   git fetch origin master
-   git reset origin/master # --hard to wipe everything but is dangerous
-}
 # Vundle plugin manager
-clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-# vim-go
-clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
-clone https://github.com/github/copilot.vim.git ~/.vim/pack/github/start/copilot.vim
+if [ ! -d  ~/.vim/bundle/Vundle.vim ]; then git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim; fi
