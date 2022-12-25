@@ -3,8 +3,10 @@ dot
 
 nictuku's dot config files (bash, vim)
 
-adduser --disabled-password yves
-visudo
+```
+adduser --disabled-password yves. # answer questions here
+adduser yves visudo
+```
 
 sudoers line reminder:
 
