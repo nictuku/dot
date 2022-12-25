@@ -5,7 +5,7 @@ nictuku's dot config files (bash, vim)
 
 ```
 adduser --disabled-password yves # answer questions here
-adduser yves visudo
+adduser yves sudo
 ```
 
 sudoers line reminder:
