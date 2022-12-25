@@ -24,8 +24,6 @@ for x in dot/home/*; do
   echo -n "Linking: "
   ln -v -s $dir/$base ~/.$base
 done
-# Vundle plugin manager
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 function clone() {
    repo=$1 # https://github.com/fatih/vim-go.git
@@ -39,7 +37,8 @@ function clone() {
    git fetch origin master
    git reset origin/master # --hard to wipe everything but is dangerous
 }
-
+# Vundle plugin manager
+clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # vim-go
 clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 clone https://github.com/github/copilot.vim.git ~/.vim/pack/github/start/copilot.vim
