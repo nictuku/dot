@@ -25,5 +25,6 @@ for x in dot/home/*; do
   ln -v -s $dir/$base ~/.$base
 done
 
-# Vundle plugin manager
-if [ ! -d  ~/.vim/bundle/Vundle.vim ]; then git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim; fi
+# plugin manager
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
