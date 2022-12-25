@@ -24,10 +24,8 @@ for x in dot/home/*; do
   echo -n "Linking: "
   ln -v -s $dir/$base ~/.$base
 done
-
-# Pathogen vim plugin manager
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+# Vundle plugin manager
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 function clone() {
    repo=$1 # https://github.com/fatih/vim-go.git
@@ -45,3 +43,4 @@ function clone() {
 # vim-go
 clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
+clone https://github.com/github/copilot.vim.git ~/.vim/pack/github/start/copilot.vim
