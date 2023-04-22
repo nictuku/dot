@@ -24,7 +24,3 @@ for x in dot/home/*; do
   echo -n "Linking: "
   ln -v -s $dir/$base ~/.$base
 done
-
-# plugin manager
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
