@@ -4,14 +4,9 @@ dot
 nictuku's dot config files (bash, vim)
 
 ```
-adduser --disabled-password yves # answer questions here
+adduser --disabled-password --gecos "" yves
 adduser yves sudo
-```
-
-sudoers line reminder:
-
-```
-%sudo	ALL=(ALL:ALL) NOPASSWD:ALL
+sed 's/%sudo   ALL=(ALL:ALL) ALL/%sudo\tALL=(ALL:ALL) NOPASSWD:ALL/' /etc/sudoers > /etc/sudoers.tmp && mv /etc/sudoers.tmp /etc/sudoers
 ```
 
 Install everything:
