@@ -25,3 +25,6 @@ set nojoinspaces
 
 "call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
+" maps shift-tab to next window
+nnoremap <S-Tab> <C-W>w
+
