@@ -6,8 +6,7 @@ nictuku's dot config files (bash, vim)
 ```
 adduser --disabled-password --gecos "" yves
 adduser yves sudo
-sed 's/%sudo   ALL=(ALL:ALL) ALL/%sudo\tALL=(ALL:ALL) NOPASSWD:ALL/' /etc/sudoers > /etc/sudoers.tmp && mv /etc/sudoers.tmp /etc/sudoers
-```
+echo 'yves ALL=(ALL:ALL) NOPASSWD:ALL' > /etc/sudoers.d/90-yves-nopasswd && chmod 0440 /etc/sudoers.d/90-yves-nopasswd && visudo -cf /etc/sudoers.d/90-yves-nopasswd```
 
 Install everything:
 
